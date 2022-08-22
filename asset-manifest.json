@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ime_sloovi/static/css/main.073c9b0a.css",
-    "main.js": "/ime_sloovi/static/js/main.1a605a21.js",
+    "main.js": "/ime_sloovi/static/js/main.5a454dde.js",
     "static/js/787.4f5990fe.chunk.js": "/ime_sloovi/static/js/787.4f5990fe.chunk.js",
     "static/media/logo.svg": "/ime_sloovi/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ime_sloovi/index.html",
     "main.073c9b0a.css.map": "/ime_sloovi/static/css/main.073c9b0a.css.map",
-    "main.1a605a21.js.map": "/ime_sloovi/static/js/main.1a605a21.js.map",
+    "main.5a454dde.js.map": "/ime_sloovi/static/js/main.5a454dde.js.map",
     "787.4f5990fe.chunk.js.map": "/ime_sloovi/static/js/787.4f5990fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.1a605a21.js"
+    "static/js/main.5a454dde.js"
   ]
 }
