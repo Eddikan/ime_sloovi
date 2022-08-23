@@ -1,5 +1,4 @@
-import { createSlice, createAction, createAsyncThunk } from '@reduxjs/toolkit';
-import type { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 import type { RootState } from '../../store/store';
 
@@ -26,6 +25,7 @@ const initialState: appState = {
 export const login = createAsyncThunk(
     'auth/login',
     async (loginData: loginPayload, thunkAPI) => {
+        // create axios instance for login
         try {
             const { email, password } = loginData;
             const instance = axios.create({
@@ -64,11 +64,12 @@ export const authSlice = createSlice({
             //    loading state
         });
         builder.addCase(login.fulfilled, (state, action) => {
+            // persist details to store and localstorage 
             const response = action.payload;
             state.user = response
             state.token = response.token;
             localStorage.setItem('sloovi-api-token', response.token);
-
+            window.location.reload();
         });
         builder.addCase(login.rejected, (state, action: any) => {
             state.error = action.payload;
