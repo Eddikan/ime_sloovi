@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg-blueish {
+  background: #e3f2fb;
+}
+.border-input {
+  border: 1.5px solid #e6e7e7;
+}
